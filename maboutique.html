@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en ligne</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ma Boutique en Ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#feedback">Avis</a></li>
+                <li><a href="#offline">En Attente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Nos Produits</h2>
+        <div class="product">
+            <img src="produit1.jpg" alt="Produit 1">
+            <h3>Produit 1</h3>
+            <p>Description du produit 1</p>
+            <p>Prix : 10€</p>
+            <button class="reserve-btn">Réserver</button>
+        </div>
+        <div class="product">
+            <img src="produit2.jpg" alt="Produit 2">
+            <h3>Produit 2</h3>
+            <p>Description du produit 2</p>
+            <p>Prix : 20€</p>
+            <button class="reserve-btn">Réserver</button>
+        </div>
+        <!-- Ajoutez plus de produits ici -->
+    </section>
+
+    <section id="reservation">
+        <h2>Réservation</h2>
+        <form>
+            <label for="product">Produit :</label>
+            <input type="text" id="product" name="product" required>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <section id="feedback">
+        <h2>Avis</h2>
+        <div class="review">
+            <label for="rating">Note :</label>
+            <select id="rating" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="comment">Commentaire :</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Soumettre</button>
+        </div>
+        <div id="reviews">
+            <!-- Les avis des utilisateurs seront affichés ici -->
+        </div>
+    </section>
+
+    <section id="offline">
+        <h2>En Attente</h2>
+        <p>Le vendeur n'est actuellement pas en ligne. Veuillez revenir plus tard.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ma Boutique en Ligne. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
